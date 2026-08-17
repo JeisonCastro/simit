@@ -1,6 +1,6 @@
 # Contexto del Proyecto — SIMIT (Sistema Integrado de Información)
 
-El SIMIT (Sistema Integrado de Información sobre Multas y Sanciones por Infracciones de Tránsito) es la plataforma oficial nacional en Colombia administrada por la Federación Colombiana de Municipios. Su propósito principal es centralizar, registrar y gestionar la información sobre comparendos, multas e infracciones viales a nivel nacional.
+El SIMIT (Sistema Integrado de Información sobre Multas y Sanciones por Infracciones de Tránsito) centraliza, registra y gestiona la información sobre comparendos, multas e infracciones viales a nivel nacional. Su propósito principal es administrar y poner a disposición la información sobre infracciones de tránsito para conductores y organismos de tránsito en Colombia.
 
 ## Misión y Propósito del Sitio Web
 
@@ -16,5 +16,5 @@ Proporcionar a los conductores y organismos de tránsito un portal digital centr
 
 - **Consulta de Comparendos:** Verificación por número de documento (Cédula, Pasaporte, NIT) o placa del vehículo.
 - **Pago en Línea:** Integración con pasarelas de pago (PSE, tarjetas de crédito/débito) para la liquidación inmediata de multas.
-- **Generación de Paz y Salvo:** Descarga de certificados oficiales que acreditan estar al día con las obligaciones de tránsito.
+- **Generación de Paz y Salvo:** Descarga de certificados que acreditan estar al día con las obligaciones de tránsito.
 - **Puntos de Atención y Acuerdos de Pago:** Información sobre sedes físicas, trámites presenciales y refinanciación de deudas.
