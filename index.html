@@ -3,57 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simit</title>
-    <meta name="description" content="Consulta tu historial de tránsito, verifica si tienes comparendos pendientes y realiza el pago de tus multas de forma rápida, fácil y segura. Este portal te permite gestionar tus trámites viales en línea desde cualquier lugar de Colombia, evitando filas y manteniendo tus papeles al día al instante.">
+    <title>SIMIT — Sistema Integrado de Información</title>
+    <meta name="description" content="Consulta tu historial de tránsito, verifica si tienes comparendos pendientes y realiza el pago de tus multas de forma rápida, fácil y segura. Este portal te permite gestionar tus trámites viales en línea desde cualquier lugar de Colombia.">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"><style id="auvro-theme">:root{--accent:#2563eb!important;--accent-dark:#1e51c1!important}*{font-family:'Roboto', system-ui, -apple-system, sans-serif!important}</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
+
+    <header class="site-header" id="header">
         <div class="container header-inner">
             <a href="#" class="brand">
-                <img class="brand-logo" src="https://i.ibb.co/NDVTfLK/logo-landing.png" alt="Simit">
-                <span>Simit</span>
+                <img class="brand-logo" src="img/logo.png" alt="SIMIT">
+                <span>SIMIT</span>
             </a>
-            <nav class="site-nav">
+            <nav class="site-nav" id="siteNav">
                 <a href="#servicios">Servicios</a>
-                <a href="#contacto" class="btn">Contacto</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#consulta">Consulta</a>
+                <a href="#contacto" class="btn btn-nav">Contacto</a>
             </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container">
-            <img class="hero-logo" src="https://i.ibb.co/NDVTfLK/logo-landing.png" alt="Simit">
-            <h1>Simit</h1>
-            <p class="hero-slogan js-empty">Tu tranquilidad vial en un solo clic: consulta, paga y ponte al día.</p>
-            <p class="hero-sub">Consulta tu historial de tránsito, verifica si tienes comparendos pendientes y realiza el pago de tus multas de forma rápida, fácil y segura. Este portal te permite gestionar tus trámites viales en línea desde cualquier lugar de Colombia, evitando filas y manteniendo tus papeles al día al instante.</p>
+        <div class="hero-bg">
+            <img src="img/bg-home.png" alt="" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">Plataforma Oficial Nacional</div>
+            <h1>Tu tranquilidad vial<br>en un solo clic</h1>
+            <p class="hero-slogan js-empty">Consulta, paga y ponte al día con tus obligaciones de tránsito.</p>
+            <p class="hero-sub">Consulta tu historial de tránsito, verifica si tienes comparendos pendientes y realiza el pago de tus multas de forma rápida, fácil y segura desde cualquier lugar de Colombia.</p>
             <div class="hero-actions">
-                <a href="#contacto" class="btn btn-primary">Empezar ahora</a>
-                <a class="btn btn-wa js-wa" data-num="573138960262" href="https://wa.me/573138960262" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    <span>WhatsApp</span>
+                <a href="#consulta" class="btn btn-primary btn-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    Consultar comparendos
                 </a>
+                <a class="btn btn-wa btn-lg js-wa" data-num="573138960262" href="https://wa.me/573138960262" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="32">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Millones de comparendos registrados</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="1100">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Municipios conectados</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+                <span class="stat-label">Disponibilidad del servicio</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                <span class="stat-label">Transaccional en línea</span>
             </div>
         </div>
     </section>
 
     <section id="servicios" class="section">
         <div class="container">
-            <h2 class="section-title">Nuestros servicios</h2>
-            <p class="section-sub">Todo lo que Simit hace por ti</p>
-            <div class="grid">
-                <div class="card">
-                    <h3>Calidad</h3>
-                    <p>Trabajamos con altos estándares en cada entrega para superar tus expectativas.</p>
+            <div class="section-header fade-in">
+                <span class="section-tag">Nuestros servicios</span>
+                <h2 class="section-title">Todo lo que SIMIT hace por ti</h2>
+                <p class="section-sub">Gestiona tus trámites viales de forma rápida, segura y desde cualquier lugar del país.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    </div>
+                    <h3>Consulta de Comparendos</h3>
+                    <p>Verifica tus infracciones por número de documento o placa del vehículo. Obtén el detalle completo de cada comparendo registrado.</p>
                 </div>
-                <div class="card">
-                    <h3>Confianza</h3>
-                    <p>Comunicación clara y resultados medibles en cada etapa del proceso.</p>
+                <div class="service-card fade-in">
+                    <div class="service-icon icon-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    </div>
+                    <h3>Pago en Línea</h3>
+                    <p>Liquidación inmediata de multas con pasarelas de pago seguras. Acepta PSE, tarjetas de crédito y débito.</p>
                 </div>
-                <div class="card">
-                    <h3>Compromiso</h3>
-                    <p>Estamos a tu lado antes, durante y después de cada proyecto.</p>
+                <div class="service-card fade-in">
+                    <div class="service-icon icon-amber">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3>Paz y Salvo</h3>
+                    <p>Descarga certificados oficiales que acreditan estar al día con tus obligaciones de tránsito ante cualquier entidad.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon icon-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Puntos de Atención</h3>
+                    <p>Encuentra sedes físicas para trámites presenciales. Acuerdos de pago y refinanciación de deudas disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="section section-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Proceso simple</span>
+                <h2 class="section-title">¿Cómo funciona?</h2>
+                <p class="section-sub">En solo 3 pasos puedes consultar y regularizar tu situación de tránsito.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Ingresa tus datos</h3>
+                    <p>Digita tu número de cédula, NIT o la placa de tu vehículo en el formulario de consulta.</p>
+                </div>
+                <div class="step-connector fade-in">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Revisa tu estado</h3>
+                    <p>Visualiza comparendos pendientes, valores a pagar y el historial completo de infracciones.</p>
+                </div>
+                <div class="step-connector fade-in">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Paga o descarga</h3>
+                    <p>Realiza tu pago en línea de forma segura o descarga tu paz y salvo certificado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consulta" class="section section-cta">
+        <div class="container">
+            <div class="cta-card fade-in">
+                <img src="img/img-carousel-8.png" alt="Consulta SIMIT" class="cta-image">
+                <div class="cta-content">
+                    <span class="section-tag tag-light">Consulta ahora</span>
+                    <h2>Verifica tu estado de tránsito</h2>
+                    <p>Ingresa tu documento o placa para conocer comparendos pendientes, realizar pagos y descargar tu paz y salvo.</p>
+                    <form class="cta-form" id="consultaForm">
+                        <div class="form-group">
+                            <select id="docType" class="form-select">
+                                <option value="CC">Cédula de Ciudadanía</option>
+                                <option value="NIT">NIT</option>
+                                <option value="CE">Cédula de Extranjería</option>
+                                <option value="TI">Tarjeta de Identidad</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-grow">
+                            <input type="text" id="docNumber" class="form-input" placeholder="Número de documento" required>
+                        </div>
+                        <div class="form-group form-group-grow">
+                            <input type="text" id="placa" class="form-input" placeholder="Placa del vehículo (opcional)">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            Consultar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-info">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Información oficial</span>
+                <h2 class="section-title">¿Qué es el SIMIT?</h2>
+                <p class="section-sub">El Sistema Integrado de Información sobre Multas y Sanciones por Infracciones de Tránsito es la plataforma oficial nacional administrada por la Federación Colombiana de Municipios.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Conductores</h3>
+                    <p>Personas naturales que necesitan verificar infracciones, pagar comparendos o descargar certificados.</p>
+                </div>
+                <div class="info-card fade-in">
+                    <div class="info-icon icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h3>Organismos de Tránsito</h3>
+                    <p>Entidades territoriales que reportan e integran la información de infracciones viales a nivel nacional.</p>
+                </div>
+                <div class="info-card fade-in">
+                    <div class="info-icon icon-amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Vehículos</h3>
+                    <p>Compradores y vendedores que requieren verificar el paz y salvo antes de realizar un traspaso.</p>
                 </div>
             </div>
         </div>
@@ -61,23 +218,43 @@
 
     <section id="contacto" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Hablemos</h2>
-            <p class="section-sub">Contáctanos y recibe atención personalizada.</p>
-            <div class="hero-actions">
-                <a href="mailto:hola@example.com" class="btn btn-primary">hola@example.com</a>
-                <a class="btn btn-wa js-wa" data-num="573138960262" href="https://wa.me/573138960262" target="_blank" rel="noopener">
+            <div class="section-header fade-in">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos</h2>
+                <p class="section-sub">Contáctanos y recibe atención personalizada para cualquier consulta.</p>
+            </div>
+            <div class="contact-actions fade-in">
+                <a href="mailto:hola@example.com" class="btn btn-primary btn-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    hola@example.com
+                </a>
+                <a class="btn btn-wa btn-lg js-wa" data-num="573138960262" href="https://wa.me/573138960262" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    <span>Escríbenos</span>
+                    Escríbenos
                 </a>
             </div>
         </div>
     </section>
 
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; <span id="year"></span> Simit. Todos los derechos reservados.</p>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="SIMIT" class="footer-logo">
+                <span>SIMIT — Sistema Integrado de Información</span>
+            </div>
+            <p class="footer-copy">&copy; <span id="year"></span> SIMIT. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#consulta">Consulta</a>
+                <a href="#contacto">Contacto</a>
+            </div>
         </div>
     </footer>
+
+    <a class="whatsapp-float js-wa" data-num="573138960262" href="https://wa.me/573138960262" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 
     <script>
         (function () {
@@ -91,8 +268,67 @@
             document.querySelectorAll('.js-empty').forEach(function (el) {
                 if (!el.textContent.trim()) el.style.display = 'none';
             });
+
+            // Mobile nav toggle
+            var toggle = document.getElementById('navToggle');
+            var nav = document.getElementById('siteNav');
+            if (toggle && nav) {
+                toggle.addEventListener('click', function () {
+                    nav.classList.toggle('is-open');
+                    toggle.classList.toggle('is-active');
+                });
+                nav.querySelectorAll('a').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        nav.classList.remove('is-open');
+                        toggle.classList.remove('is-active');
+                    });
+                });
+            }
+
+            // Scroll animations
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+            document.querySelectorAll('.fade-in').forEach(function (el) { observer.observe(el); });
+
+            // Stat counter animation
+            var statObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        var el = entry.target;
+                        var target = parseInt(el.getAttribute('data-target'), 10);
+                        var duration = 2000;
+                        var start = 0;
+                        var startTime = null;
+                        function animate(time) {
+                            if (!startTime) startTime = time;
+                            var progress = Math.min((time - startTime) / duration, 1);
+                            var eased = 1 - Math.pow(1 - progress, 3);
+                            el.textContent = Math.floor(eased * target);
+                            if (progress < 1) requestAnimationFrame(animate);
+                        }
+                        requestAnimationFrame(animate);
+                        statObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+            document.querySelectorAll('.stat-number').forEach(function (el) { statObserver.observe(el); });
+
+            // Header scroll effect
+            var header = document.getElementById('header');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
         })();
     </script>
-<script src="https://auvro.netlify.app/widget.js" data-store="simit"></script>
+    <script src="https://auvro.netlify.app/widget.js" data-store="simit"></script>
 </body>
 </html>
